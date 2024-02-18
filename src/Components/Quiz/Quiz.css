@@ -1,0 +1,74 @@
+.container {
+    width: 90%; /* Adjust width as needed */
+    max-width: 700px; /* Limit maximum width */
+    margin: 150px auto; /* Center horizontally */
+    background: white;
+    color: black;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px;
+    border-radius: 20px;
+    padding: 40px; /* Adjust padding as needed */
+}
+
+.container h2 {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.container ul li {
+    height: 50px;
+    min-width: 200px; /* Set minimum width for each option */
+    padding: 0 12px; /* Adjust padding */
+    border:  3px solid;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.container button {
+   margin: auto;
+   width: 200px;
+   height: 65px;
+   background: rgb(195, 37, 197);
+   color:whitesmoke;
+   font-size: 25px;
+   font-weight: 500;
+   border-radius: 9px;
+   cursor: pointer;
+}
+.container.index{
+    margin: auto;
+    font-size: 18px;
+}
+.container .options{
+    margin: auto;
+    font-size: 20px;
+}
+.Correct{
+    background: greenyellow;
+    border-color: aquamarine;
+}
+.Wrong{
+    background: red;
+    border-color: red;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .container ul li {
+        min-width: auto; /* Allow options to shrink */
+        font-size: 16px; /* Adjust font size */
+    }
+}
